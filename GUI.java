@@ -2,7 +2,7 @@
 import javax.swing.JFrame;
 
 public class GUI extends JFrame {
-  UI() {
+  GUI() {
     JFrame frame = new JFrame();
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(500, 600);

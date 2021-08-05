@@ -1,4 +1,4 @@
-import java.swt.Random;
+import java.util.Random;
 
 public class MODEL {
 
@@ -11,12 +11,24 @@ public class MODEL {
 private int setIndexNumber() {
 
   Random random = new Random();
-  this.uuid = Math.abs(random.nextInt(4589));
+  this.indexNumber = Math.abs(random.nextInt(64589));
   return this.indexNumber;
 }
 
+// Get Index Number
 public int getIndexNumber() {
   return this.setIndexNumber();
+}
+
+public int setYearAdmitted(int setYear) {
+ String year = String.valueOf(setYear);
+  if(year.lenght >= 4) return;
+
+  return Integer.parseInt(year);
+}
+
+public int getYearAdmitted() {
+  return this.setYearAdmitted();
 }
 
 }
