@@ -4,10 +4,13 @@ class Main {
     MODEL model = new MODEL();
 
     int index = model.getIndexNumber();
-    new GUI();
+    GUI student = new GUI();
+    
     //System.out.printIn("2021" + index);
+     model.setFirstName(student.firstName.getText());
+   // model.setYearAdmitted(2021);
 
-    model.setYearAdmitted(2021);
-     System.out.println("2021" + model.getYearAdmitted());
+    //student.submitButton.addActionListener()
+     System.out.println(model.getFirstName());
   }
 }
