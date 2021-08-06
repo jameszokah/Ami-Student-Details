@@ -36,8 +36,8 @@ public class GUI extends JFrame implements ActionListener {
     panel.add(firstName);
 
   JPanel panel1 = new JPanel();
-    panel1.add(lastNameLabel);
-    panel1.add(lastName);
+    panel.add(lastNameLabel);
+    panel.add(lastName);
 
     JPanel panel2 = new JPanel();
     panel2.add(ageLabel);
@@ -51,21 +51,21 @@ public class GUI extends JFrame implements ActionListener {
     submitButton.setText("Submit");
     // submitButton.setBackground(Color.grey);
 
-
+    JPanel mainPanel = new JPanel();
+    mainPanel.setLayout(new B)
+     mainPanel.add(panel);
+   mainPanel.add(panel1);
+   mainPanel.add(panel2);
+   mainPanel.add(panel3);
+    mainPanel.add(submitButton);
 
 
     //JFrame frame = new JFrame();
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setSize(400, 400);
     this.setTitle("Ami Student Details");
-    this.add(panel);
-    this.add(submitButton);
-   this.add(panel1);
-   this.add(panel2);
-   this.add(panel3);
-   
-   this.setVisible(true);
-    
+    this.setVisible(true);
+    this.add(mainPanel);
   }
 
   // Handle button events.
